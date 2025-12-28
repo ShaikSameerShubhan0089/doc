@@ -310,20 +310,21 @@ It replaces fragmented, manual workflows with an **automated, auditable, and pro
 - Publisher compliance enforced at code level
 
 ---
+```mermaid
 flowchart TD
-    UI[User Interface<br/>(React Web App)]
-    API[API Gateway<br/>(FastAPI)]
-    CORE[Document Processing Core]
-    OCR[OCR Engine Manager]
-    LAYOUT[Layout Analyzer]
-    INDENT[Indentation Detector]
-    IMG[Image Classifier]
-    EQ[Equation Handler]
-    ASSEMBLY[Content Assembly Layer]
-    XHTML[XHTML Generator]
-    XML[Journal XML Generator]
-    VALIDATION[Validation Layer]
-    OUTPUT[Final Output<br/>(EPUB / XML / ZIP)]
+    UI["User Interface<br/>(React Web App)"]
+    API["API Gateway<br/>(FastAPI)"]
+    CORE["Document Processing Core"]
+    OCR["OCR Engine Manager"]
+    LAYOUT["Layout Analyzer"]
+    INDENT["Indentation Detector"]
+    IMG["Image Classifier"]
+    EQ["Equation Handler"]
+    ASSEMBLY["Content Assembly Layer"]
+    XHTML["XHTML Generator"]
+    XML["Journal XML Generator"]
+    VALIDATION["Validation Layer"]
+    OUTPUT["Final Output<br/>(EPUB / XML / ZIP)"]
 
     UI --> API
     API --> CORE
@@ -347,7 +348,7 @@ flowchart TD
     XML --> VALIDATION
 
     VALIDATION --> OUTPUT
----
+```
 **Document Status:** Final  
 **Audience:** Management, Engineering, Publishing Operations  
 **Ready for:** Approval & Implementation
